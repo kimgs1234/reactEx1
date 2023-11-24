@@ -1,0 +1,221 @@
+header {
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid red;
+  width: 100%;
+
+  justify-content: space-between;
+  z-index: 1000;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+menu {
+  list-style: none;
+  padding: 0;
+}
+header h3 {
+  margin-left: 25px;
+  background-color: #ddd;
+  width: 50px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+header a {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  width: 30px;
+  height: 25px;
+}
+header a span {
+  text-indent: -9999px;
+  width: 100%;
+  height: 2.4px;
+  background-color: #000;
+  position: absolute;
+}
+header a span:nth-child(1) {
+  top: 0;
+  transform-origin: top right;
+}
+header a span:nth-child(2) {
+  width: 80%;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+header a span:nth-child(3) {
+  width: 60%;
+  bottom: 0;
+  right: 0;
+  transform-origin: bottom right;
+}
+header div {
+  background-color: #000;
+  transition: 0.5s;
+  text-align: center;
+  width: 25vw;
+  height: 20vh;
+  position: fixed;
+  top: 20px;
+  right: -1000px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 40px 50px;
+  line-height: 1.8;
+  border-radius: 20px;
+}
+header div.active {
+  right: 20px;
+}
+.x-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 20px;
+  right: 20px;
+}
+.x-btn::after,
+.x-btn::before {
+  content: "";
+  width: 80%;
+  height: 2.5px;
+  background-color: #fff;
+  position: absolute;
+  transform: rotate(45deg);
+}
+.x-btn::after {
+  transform: rotate(-45deg);
+}
+.Box {
+  margin-top: 150px;
+}
+.Box h1 {
+  margin: 0;
+  margin-left: 10vw;
+  font-size: 5rem;
+}
+.Box p {
+  margin-left: 10vw;
+  font-size: 1.5rem;
+}
+.color-box {
+  z-index: 1;
+  position: relative;
+  margin: 80px auto;
+  border-radius: 30px;
+  width: 80vw;
+  height: 60vw;
+  background-color: orange;
+}
+.color-box img {
+  top: -15px;
+  left: 45px;
+  position: absolute;
+  width: 60vw;
+}
+.box-container h2 {
+  width: 70vw;
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 110px auto 90px;
+}
+.swiperimg {
+  display: flex;
+  justify-content: center;
+  width: 75vw;
+}
+.swiperimg button {
+  display: flex;
+  justify-content: space-between;
+}
+.swiperimg img {
+  width: 75vw;
+  height: 60vw;
+  border-radius: 40px;
+  margin: auto;
+}
+.swiperBox h4 {
+  margin-top: 50px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.swiperBox p {
+  color: #ccc;
+  width: 70vw;
+  margin: 50px auto;
+  text-align: center;
+}
+.swiper-button-prev {
+  left: 15%;
+  background-color: cornflowerblue;
+  color: #fff;
+
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.swiper-button-prev::after {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.swiper-button-next::after {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.swiper-button-next {
+  right: 15%;
+  background-color: cornflowerblue;
+  color: #fff;
+
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.up-btn {
+  z-index: 100;
+  position: fixed;
+  display: block;
+  bottom: 25px;
+  right: 25px;
+
+  width: 50px;
+  height: 50px;
+  background-color: brown;
+  border-radius: 50%;
+}
+.up-btn:before {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 32%;
+  transform: translate(-32%, -25%);
+  transform: rotate(-45deg);
+  width: 15px;
+  height: 15px;
+  border: 3px solid #fff;
+  border-bottom: none;
+  border-left: none;
+}
+.up-btn::after {
+  content: "";
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+  width: 3px;
+  height: 20px;
+  background-color: #fff;
+}
+.up-btn span {
+  width: 25px;
+  background-color: #fff;
+  position: absolute;
+  height: 3px;
+  top: 72%;
+  left: 25%;
+}
